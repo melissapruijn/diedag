@@ -74,18 +74,7 @@ Mousetrap.bind('space', function() {
 		link.click();
 	}
 });
-
-// Reference to our pointer element
-	const pointer = document.getElementById("pointer");
-	
-	document.body.addEventListener('mousemove', e => {
-		const x = e.pageX - (pointer.clientWidth / 2);
-		const y = e.pageY - (pointer.clientHeight / 2);
-		const invertedY = document.body.clientHeight - y;
-	
-		pointer.style.transform = `translate(${x}px, ${invertedY}px)`;
-	});	
-</script><tw-passagedata pid="1" name="Start" tags="" position="100,100" size="100,100">{(opacity: 0)|next&gt;[ [[i|Next-&gt;2]]] 
+</script><tw-passagedata pid="1" name="Start" tags="" position="100,101" size="100,100">{(opacity: 0)|next&gt;[ [[i|Next-&gt;2]]] 
 (set: $wereld to &quot;de wereld&quot;)}
 
 
@@ -201,7 +190,8 @@ Maar buiten was het altijd nog erger. Voor iemand ook maar besefte dat de hemel 
 
 
 
-(opacity: 0)[Ik keek alleen maar naar mijn telefoon en wachtte tot jij zou bellen.]
+(opacity: 0)[Ik keek alleen maar naar mijn telefoon en wachtte tot jij zou 
+(live: 5s)[bellen.]]
 
 (opacity: 0)[Ik lag op de bank en ik deed eigenlijk niets; ik las geen boek en ik keek geen TV. Was de wereld op dat moment vergaan, dan had ik het niet gemerkt.]
 
@@ -222,9 +212,10 @@ En ik?
 
 
 
-(opacity: 0)[Ik keek alleen maar naar mijn telefoon en wachtte tot jij zou bellen.]
+(opacity: 0)[Ik keek alleen maar naar mijn telefoon en wachtte tot jij zou 
+(live: 5s)[bellen.]]
 
-Ik lag op de bank en ik deed eigenlijk niets; ik las geen boek en ik keek geen TV. Was |disappear&gt;[de wereld] op dat moment vergaan, dan had ik het niet gemerkt.
+Ik lag op de bank en ik deed eigenlijk niets; ik las geen boek en ik keek geen TV. Was (text-style:&quot;blur&quot;)[de wereld] op dat moment vergaan, dan had ik het niet gemerkt.
 
 En ik?</tw-passagedata><tw-passagedata pid="8" name="8" tags="" position="500,300" size="100,100">(opacity: 0)|next&gt;[ [[i|Next-&gt;9]]]
 
@@ -240,9 +231,10 @@ En ik?</tw-passagedata><tw-passagedata pid="8" name="8" tags="" position="500,30
 
 
 
-Ik keek alleen maar naar mijn telefoon en wachtte tot jij zou bellen.
+Ik keek alleen maar naar mijn telefoon en wachtte tot jij zou 
+(live: 6s)[bellen.]
 
-Ik lag op de bank en ik deed eigenlijk niets; ik las geen boek en ik keek geen TV. Was |disappear&gt;[de wereld] op dat moment vergaan, dan had ik het niet gemerkt.
+Ik lag op de bank en ik deed eigenlijk niets; ik las geen boek en ik keek geen TV. Was (opacity: 0)[de wereld] op dat moment vergaan, dan had ik het niet gemerkt.
 
 En ik?</tw-passagedata><tw-passagedata pid="9" name="9" tags="" position="500,500" size="100,100">(opacity: 0)|next&gt;[ [[i|Next-&gt;10]]]
 
