@@ -9,11 +9,205 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Die dag.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Die dag" startnode="1" creator="Twine" creator-version="2.3.13" ifid="8CBA1389-10FF-4F17-83DF-A0B6F5713F9D" zoom="1" format="Harlowe" format-version="3.2.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-link {
-  color:gray;
+<tw-storydata name="Die dag" startnode="1" creator="Twine" creator-version="2.3.13" ifid="8CBA1389-10FF-4F17-83DF-A0B6F5713F9D" zoom="1" format="Harlowe" format-version="3.2.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-link, .enchantment-link {
+	display: inline-block;
+	padding: 0.5em 1em 0.5em 1em;
+	background-color: gray;
+	margin: 0.5em;
+	border-width: 1px;
+	border-style: solid;
+	border-color: black;
+	border-radius: 10px;
+  	color: white;
+    cursor: url("https://i.ibb.co/QnSBND0/cursor.png") 8 8, auto;
 }
-.enchantment-link:hover, tw-link:hover {
- color:lightgray;
+tw-hook[name="next"] {
+	 display: inline-block;
+	padding: 0.5em 1em 0.5em 1em;
+	background-color: gray;
+	margin: 0.5em;
+	border-width: 1px;
+	border-style: solid;
+	border-color: black;
+	border-radius: 10px;
+  	color: white;
+    cursor: url("https://i.ibb.co/QnSBND0/cursor.png") 8 8, auto;
+    position: fixed;
+	bottom: 100px;
+}
+tw-hook[name="top"] {
+    position: fixed;
+	top: 100px;
+    left: 45%;
+}
+tw-hook[name="bottom"] {
+	 display: inline-block;
+	padding: 0.5em 1em 0.5em 1em;
+	background-color: gray;
+	margin: 0.5em;
+	border-width: 1px;
+	border-style: solid;
+	border-color: black;
+	border-radius: 10px;
+  	color: white;
+    cursor: url("https://i.ibb.co/QnSBND0/cursor.png") 8 8, auto;
+    position: fixed;
+	bottom: 100px;
+    left: 45%;
+}
+tw-hook[name="left1"] {
+	 display: inline-block;
+	padding: 0.5em 1em 0.5em 1em;
+	background-color: transparent;
+	margin: 0.5em;
+	border-width: 1px;
+	border-style: solid;
+	border-color: black;
+	border-radius: 10px;
+  	color: transparent;
+    cursor: url("https://i.ibb.co/QnSBND0/cursor.png") 8 8, auto;
+    position: fixed;
+	bottom: 100px;
+    left: 40%;
+  z-index: 1;
+}
+tw-hook[name="left2"] {
+	 display: inline-block;
+	padding: 0.5em 1em 0.5em 1em;
+	background-color: gray;
+	margin: 0.5em;
+	border-width: 1px;
+	border-style: solid;
+	border-color: black;
+	border-radius: 10px;
+  	color: white;
+    cursor: url("https://i.ibb.co/QnSBND0/cursor.png") 8 8, auto;
+    position: fixed;
+	bottom: 100px;
+    left: 40%;
+    z-index: 0;
+}
+tw-hook[name="right"] {
+	 display: inline-block;
+	padding: 0.5em 1em 0.5em 1em;
+	background-color: gray;
+	margin: 0.5em;
+	border-width: 1px;
+	border-style: solid;
+	border-color: black;
+	border-radius: 10px;
+  	color: white;
+    cursor: url("https://i.ibb.co/QnSBND0/cursor.png") 8 8, auto;
+    position: fixed;
+	bottom: 100px;
+    left: 50%;
+}
+tw-hook[name="next"]:hover ~ tw-hook[name="next"],  tw-hook[name="next"]:hover{
+    display: inline-block;
+	padding: 0.5em 1em 0.5em 1em;
+	background-color: white;
+	margin: 0.5em;
+	border-width: 1px;
+	border-style: solid;
+	border-color: black;
+	border-radius: 10px;
+  	color: gray;
+    cursor: url("https://i.ibb.co/QnSBND0/cursor.png") 8 8, auto;
+  position: fixed;
+	bottom: 100px;
+}
+tw-hook[name="left1"]:hover ~ tw-hook[name="right"],  tw-hook[name="right"]:hover{
+    display: inline-block;
+	padding: 0.5em 1em 0.5em 1em;
+	background-color: white;
+	margin: 0.5em;
+	border-width: 1px;
+	border-style: solid;
+	border-color: black;
+	border-radius: 10px;
+  	color: gray;
+    cursor: url("https://i.ibb.co/QnSBND0/cursor.png") 8 8, auto;
+  position: fixed;
+	bottom: 100px;
+}
+tw-hook[name="left1"]:hover ~ tw-hook[name="left2"],  tw-hook[name="left2"]:hover{
+    display: inline-block;
+	padding: 0.5em 1em 0.5em 1em;
+	background-color: white;
+	margin: 0.5em;
+	border-width: 1px;
+	border-style: solid;
+	border-color: black;
+	border-radius: 10px;
+  	color: gray;
+    cursor: url("https://i.ibb.co/QnSBND0/cursor.png") 8 8, auto;
+  position: fixed;
+	bottom: 100px;
+}
+tw-hook[name="right"]:hover ~ tw-hook[name="left2"],  tw-hook[name="left2"]:hover{
+    display: inline-block;
+	padding: 0.5em 1em 0.5em 1em;
+	background-color: white;
+	margin: 0.5em;
+	border-width: 1px;
+	border-style: solid;
+	border-color: black;
+	border-radius: 10px;
+  	color: gray;
+    cursor: url("https://i.ibb.co/QnSBND0/cursor.png") 8 8, auto;
+  position: fixed;
+	bottom: 100px;
+}
+tw-hook[name="bottom"]:hover ~ tw-hook[name="top"],  tw-hook[name="top"]:hover{
+	background-color: white;
+	border-color: black;
+  	color: gray;
+    cursor: url("https://i.ibb.co/QnSBND0/cursor.png") 8 8, auto;
+  position: fixed;
+	top: 100px;
+  left: 45%;
+}
+tw-hook[name="next"]:hover {
+	 display: inline-block;
+	padding: 0.5em 1em 0.5em 1em;
+	background-color: white;
+	margin: 0.5em;
+	border-width: 1px;
+	border-style: solid;
+	border-color: black;
+	border-radius: 10px;
+  	color: gray;
+    cursor: url("https://i.ibb.co/QnSBND0/cursor.png") 8 8, auto;
+  position: fixed;
+	bottom: 100px;
+}
+tw-hook[name="left1"]:hover {
+	 display: inline-block;
+	padding: 0.5em 1em 0.5em 1em;
+	background-color: white;
+	margin: 0.5em;
+	border-width: 1px;
+	border-style: solid;
+	border-color: black;
+	border-radius: 10px;
+  	color: gray;
+    cursor: url("https://i.ibb.co/QnSBND0/cursor.png") 8 8, auto;
+  position: fixed;
+	bottom: 100px;
+}
+tw-hook[name="right"]:hover {
+	 display: inline-block;
+	padding: 0.5em 1em 0.5em 1em;
+	background-color: white;
+	margin: 0.5em;
+	border-width: 1px;
+	border-style: solid;
+	border-color: black;
+	border-radius: 10px;
+  	color: gray;
+    cursor: url("https://i.ibb.co/QnSBND0/cursor.png") 8 8, auto;
+  position: fixed;
+	bottom: 100px;
 }
 tw-passage {
   text-align: center; 
@@ -22,32 +216,27 @@ tw-passage {
   font-size: 2.5vmin;
   line-height: normal;
   position: relative;
-  top:-15vh;
-  cursor: url("https://i.ibb.co/QnSBND0/cursor.png") 8 8, auto;
+  height: 100vh;
+  align-content: center;
 }
 tw-sidebar {
-  max-height: 100vh;
-  margin-top: 5vh;
+  display: none;
 }
 .transition-in[data-t8n^=dissolve] {
 	-webkit-animation:appear 0ms step-start;
 	animation:appear 0ms step-start
 }
-.enchantment-mouseover {
-	border-bottom: hidden;
-}
 tw-story {
   margin-top: 0;
+  width: 100%;
+  cursor: url("https://i.ibb.co/QnSBND0/cursor.png") 8 8, auto;
 }
-tw-icon[alt] {
-    opacity: 0.4;
+body{
+    /* Margin, padding or overflow can ruin the alignment of the pointer. */
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
-tw-icon:hover {
-	opacity: 0.1;
-	font-weight: bold;
-}
-
-
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">try {
 /* mousetrap v1.6.5 craig.is/killing/mice */
 (function(q,u,c){function v(a,b,g){a.addEventListener?a.addEventListener(b,g,!1):a.attachEvent("on"+b,g)}function z(a){if("keypress"==a.type){var b=String.fromCharCode(a.which);a.shiftKey||(b=b.toLowerCase());return b}return n[a.which]?n[a.which]:r[a.which]?r[a.which]:String.fromCharCode(a.which).toLowerCase()}function F(a){var b=[];a.shiftKey&&b.push("shift");a.altKey&&b.push("alt");a.ctrlKey&&b.push("ctrl");a.metaKey&&b.push("meta");return b}function w(a){return"shift"==a||"ctrl"==a||"alt"==a||
@@ -68,169 +257,233 @@ Mousetrap.bind('space', function() {
 		link.click();
 	}
 });
-</script><tw-passagedata pid="1" name="Start" tags="" position="100,101" size="100,100">{(opacity: 0)|next&gt;[ [[i|Next-&gt;2]]] 
-(set: $wereld to &quot;de wereld&quot;)}
+if (typeof pointer === 'undefined') {
+const REVERSECURSOR =
+`
+<script type="text/javascript">
+var pointer;
 
+window.onload=function() { if (document.getElementById) {
+	pointer = createDiv();
+}
+}
 
+function createDiv() {
+  var div=document.createElement("pointer");
+  div.style.position="absolute";
+  div.style.height="20px";
+  div.style.width="20px";
+  div.style.backgroundImage="URL('https://i.ibb.co/QnSBND0/cursor.png')";
+  div.style.overflow="hidden";
+	div.style.zIndex=1;
+	document.body.appendChild(div);
+  return (div);
+}
 
+function mirrorMouse(e) {
+    var x = e.pageX - (pointer.clientWidth / 2);
+    var y = e.pageY - (pointer.clientHeight / 2);
+    var invertedX = document.body.clientWidth - x; 
+		pointer.style.transform = "translate(" + invertedX + "px," + y + "px)";
+}
 
+// ]]>
+<\/script>
+`
 
+	$('head').append(REVERSECURSOR);
+	window.onload();
+}</script><tw-passagedata pid="1" name="Start" tags="" position="100,101" size="100,100">(opacity: 0)|next&gt;[ [[i|Next-&gt;2]]] 
 
 
 
 
 
+Die dag stond de wereld op z&#39;n kop.
 
 
 
-(opacity: 0)[Wetenschappers die het geluk hadden het voorval te overleven zeiden dat de zwaartekracht niet zozeer was verdwenen, maar zich als het ware had (text-style:&quot;mirror&quot;)[omgekeerd], alsof onze planeet in een kwinkslag al haar massa had verloren en door een kolossaal object werd omringd. Gelovigen die de pech hadden het wonder te overleven, zeiden dat het geven en nemen was en God nu eindelijk nam, na zoveel jaren gegeven te hebben. Maar er was geen kolossaal object, en door God genomen worden is een discutabel gegeven.]
 
-(opacity: 0)[We wisten niet waarom het gebeurde. Sommigen van ons vroegen zich af of het aan ons lag. Of we tot de verkeerde Goden hadden gebeden of de verkeerde dingen hadden gezegd. Maar dat was niet zo; (text-style:&quot;upside-down&quot;)[$wereld] stond alleen op z’n kop.]
 
-Die dag stond (text-style:&quot;upside-down&quot;)[$wereld] op z&#39;n kop.
 
+[[[Volgende-&gt;2]]]&lt;bottom| 
 
+[[[Volgende-&gt;2]]]&lt;top|
+</tw-passagedata><tw-passagedata pid="2" name="2" tags="" position="100,300" size="100,100">(opacity: 0)|next&gt;[ [[i|Next-&gt;3]]]
+[[Volgende-&gt;3]]
 
 
 
 
 
-(text-colour:#adb5bd)[druk op de spatiebalk]</tw-passagedata><tw-passagedata pid="2" name="2" tags="" position="101,315" size="100,100">{(opacity: 0)|next&gt;[ [[i|Next-&gt;3]]] 
-(set: $wereld to &quot;de wereld&quot;)}
+We wisten niet waarom het gebeurde. Sommigen van ons vroegen zich af of het aan ons lag. Of we tot de verkeerde Goden hadden gebeden of de verkeerde dingen hadden gezegd. Maar dat was niet zo; de wereld stond alleen op z’n kop
 
 
 
 
+|left1&gt;[[Volgende-&gt;3]] 
+|right&gt;[[Volgende-&gt;3]]
+|left2&gt;[[Volgende-&gt;3]] 
 
+&lt;script&gt;
+document.body.addEventListener(&quot;mousemove&quot;, mirrorMouse);
+document.body.style.cursor = &#39;none&#39;;
+pointer.style.visibility = &#39;visible&#39;;
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="3" name="3" tags="" position="100,501" size="100,100">(opacity: 0)|next&gt;[ [[i|Next-&gt;4]]] 
 
 
 
 
 
+Wetenschappers die het geluk hadden het voorval te overleven zeiden dat de zwaartekracht niet zozeer was verdwenen, maar zich als het ware had omgekeerd, alsof onze planeet in een kwinkslag al haar massa had verloren en door een kolossaal object werd omringd. Gelovigen die de pech hadden het wonder te overleven, zeiden dat het geven en nemen was en God nu eindelijk nam, na zoveel jaren gegeven te hebben. Maar er was geen kolossaal object, en door God genomen worden is een discutabel gegeven.
 
 
 
-(opacity: 0)[Wetenschappers die het geluk hadden het voorval te overleven zeiden dat de zwaartekracht niet zozeer was verdwenen, maar zich als het ware had (text-style:&quot;mirror&quot;)[omgekeerd], alsof onze planeet in een kwinkslag al haar massa had verloren en door een kolossaal object werd omringd. Gelovigen die de pech hadden het wonder te overleven, zeiden dat het geven en nemen was en God nu eindelijk nam, na zoveel jaren gegeven te hebben. Maar er was geen kolossaal object, en door God genomen worden is een discutabel gegeven.]
 
-We wisten niet waarom het gebeurde. Sommigen van ons vroegen zich af of het aan ons lag. Of we tot de verkeerde Goden hadden gebeden of de verkeerde dingen hadden gezegd. Maar dat was niet zo; (text-style:&quot;upside-down&quot;)[$wereld] stond alleen op z’n kop.
 
-Die dag stond (text-style:&quot;upside-down&quot;)[de wereld] op z&#39;n kop.
 
-(opacity: 0)[druk op de spatiebalk]</tw-passagedata><tw-passagedata pid="3" name="3" tags="" position="100,500" size="100,100">{(opacity: 0)|next&gt;[ [[i|Next-&gt;4]]] 
-(set: $wereld to &quot;de wereld&quot;)}
 
+&lt;script&gt;
+document.body.removeEventListener(&quot;mousemove&quot;, mirrorMouse);
+document.body.style.cursor = &#39;auto&#39;;
+pointer.style.visibility = &#39;hidden&#39;;
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="4" name="4" tags="" position="300,100" size="100,100">(opacity: 0)|next&gt;[ [[i|Next-&gt;5]]]
 
 
 
 
 
+Het gebeurde als een donderslag bij heldere hemel, om vijf over tien ’s ochtends. Er was een moment, een magisch moment, waarop je ons allemaal halverwege onze woonkamers in de lucht kon zien zweven, ondersteboven in de houding van onze laatste bezigheid, koffiedrinkers koffiedrinkend uit omgekeerde kopjes koffie, verliefden zich vastklampend aan elkaars vallende lichaam, oude mannen graaiend naar afglijdende toupetjes, kinderen kraaiend en katten krijsend, allen omringd door de asteroïden van onze bezittingen; o, het was een moment van volmaakte waanzin, bevroren in de tijd. Toen begon het gekraak en gerinkel, het gebulder en geschreeuw. Een pandemonium was het. We kwakten tegen plafonds en werden verpletterd onder het puin van ons oude leven. Schedels kraakten. Nekken braken. Baby’s stuiterden. De meeste van ons stierven ter plekke of staken stuiptrekkend uit gaten in gipsplaten plafonds. Zij die overleefden lagen verbijsterd op inzakkende zolderingen, proberend te bevatten wat er zojuist was gebeurd.
 
 
+</tw-passagedata><tw-passagedata pid="5" name="5" tags="" position="301,300" size="100,100">(opacity: 0)|next&gt;[ [[i|Next-&gt;6]]]
 
 
 
 
 
-Wetenschappers die het geluk hadden het voorval te overleven zeiden dat (text-style:&quot;mirror&quot;)[de zwaartekracht] niet zozeer was verdwenen, maar zich als het ware had omgekeerd, alsof onze planeet in een kwinkslag al haar massa had verloren en door een kolossaal object werd omringd. Gelovigen die de pech hadden het wonder te overleven, zeiden dat het geven en nemen was en God nu eindelijk nam, na zoveel jaren gegeven te hebben. Maar er was geen kolossaal object, en door God genomen worden is een discutabel gegeven.
+Maar buiten was het altijd nog erger. Voor iemand ook maar besefte dat de hemel niet langer boven, maar onder ons was, viel men pardoes van het aardoppervlak. Binnen de kortste keren was het luchtruim bezaaid met tuimelende mensen, wapperende kledingstukken, spartelende honden, wentelende auto’s, klepperende dakpannen, loeiend vee en dwarrelende herfstbladeren in kleuren die de lucht in vuur en vlam zetten. Mensen onder portieken rollebolden tot ze tot stilstand kwamen op krakende afdakjes en staarden over de rand in peilloze diepten. Een mol die zijn neus uit de grond stak werd gegrepen door de zwaartekracht en een opspringende walvis zou nooit meer terug in zee landen. Moe van haar last schudde Moedertje Aarde al wat niet met haar oppervlak in verbinding stond van zich af. In een opwaartse stuwing viel het de dampkring in. Vliegtuigen, satellieten en ruimtestations verdwenen in het vacuüm en zelfs Vadertje Maan werd van ons weggeduwd. We zagen hem kleiner en kleiner worden, tot hij verdrietig zijn eigen baan om de zon trok. Hij zei niet eens vaarwel.
 
-We wisten niet waarom het gebeurde. Sommigen van ons vroegen zich af of het aan ons lag. Of we tot de verkeerde Goden hadden gebeden of de verkeerde dingen hadden gezegd. Maar dat was niet zo; (text-style:&quot;upside-down&quot;)[$wereld] stond alleen op z’n kop.
+</tw-passagedata><tw-passagedata pid="6" name="6" tags="" position="300,501" size="100,100">(opacity: 0)|next&gt;[ [[i|Next-&gt;7]]]
 
-Die dag stond (text-style:&quot;upside-down&quot;)[de wereld] op z&#39;n kop.
 
-(opacity: 0)[druk op de spatiebalk]</tw-passagedata><tw-passagedata pid="4" name="4" tags="" position="300,97" size="100,100">{(opacity: 0)|next&gt;[ [[i|Next-&gt;5]]]
-(set: $koffie to &quot;kopjes koffie&quot;)}
 
 
-
-
-
-
-
-
-
-
-
-
-
-Het gebeurde als een donderslag bij heldere hemel, om vijf over tien ’s ochtends. Er was een moment, een magisch moment, waarop je (text-style:&quot;upside-down&quot;,&quot;sway&quot;)[ons] allemaal halverwege onze woonkamers in de lucht kon zien zweven, ondersteboven in de houding van onze laatste bezigheid, koffiedrinkers koffiedrinkend uit omgekeerde (text-style:&quot;mirror&quot;)[kopjes koffie], verliefden zich vastklampend aan elkaars vallende lichaam, oude mannen graaiend naar afglijdende toupetjes, kinderen kraaiend en katten krijsend, allen omringd door de asteroïden van onze bezittingen; o, het was een moment van volmaakte waanzin, bevroren in de tijd. Toen begon het gekraak en gerinkel, het gebulder en geschreeuw. Een pandemonium was het. We kwakten tegen plafonds en werden verpletterd onder het puin van ons oude leven. Schedels kraakten. Nekken braken. Baby’s stuiterden. De meeste van ons stierven ter plekke of staken stuiptrekkend uit gaten in gipsplaten plafonds. Zij die overleefden lagen verbijsterd op inzakkende zolderingen, proberend te bevatten wat er zojuist was gebeurd.</tw-passagedata><tw-passagedata pid="5" name="5" tags="" position="300,300" size="100,100">{(opacity: 0)|next&gt;[ [[i|Next-&gt;6]]]
-(set: $maan to &quot;Vadertje Maan&quot;)}
-
-
-
-
-
-
-
-
-
-
-
-
-
-Maar buiten was het altijd nog erger. Voor iemand ook maar besefte dat de hemel niet langer boven, maar onder ons was, viel men pardoes van het aardoppervlak. Binnen de kortste keren was het luchtruim bezaaid met tuimelende mensen, wapperende kledingstukken, spartelende honden, wentelende auto’s, klepperende dakpannen, loeiend vee en dwarrelende herfstbladeren in kleuren die de lucht in vuur en vlam zetten. Mensen onder portieken rollebolden tot ze tot stilstand kwamen op krakende afdakjes en staarden over de rand in peilloze diepten. Een mol die zijn neus uit de grond stak werd gegrepen door de zwaartekracht en (text-style:&quot;superscript&quot;)[een opspringende walvis] zou nooit meer terug in zee landen. Moe van haar last schudde Moedertje Aarde al wat niet met haar oppervlak in verbinding stond van zich af. In een opwaartse stuwing viel het de dampkring in. Vliegtuigen, satellieten en ruimtestations verdwenen in het vacuüm en zelfs (css: &quot;font-size: 60%;&quot;)[Vadertje Maan] werd van ons weggeduwd. We zagen hem kleiner en kleiner worden, tot hij verdrietig zijn eigen baan om de zon trok. Hij zei niet eens vaarwel.
-
-</tw-passagedata><tw-passagedata pid="6" name="6" tags="" position="301,501" size="100,100">{(opacity: 0)|next&gt;[ [[i|Next-&gt;7]]]
-(set: $ik to &quot;En ik?&quot;)}
-
-
-
-
-
-
-
-
-
-
-
-
-
-(opacity: 0)[Ik keek alleen maar naar mijn telefoon en wachtte tot jij zou 
-(live: 5s)[bellen.]]
-
-(opacity: 0)[Ik lag op de bank en ik deed eigenlijk niets; ik las geen boek en ik keek geen TV. Was de wereld op dat moment vergaan, dan had ik het niet gemerkt.]
 
 En ik?
 
-</tw-passagedata><tw-passagedata pid="7" name="7" tags="" position="501,100" size="100,100">{(opacity: 0)|next&gt;[ [[i|Next-&gt;8]]]
-(set: $wereld3 to &quot;de wereld&quot;)}
-
-
-
-
-
-
-
-
-
-
-
-
-
-(opacity: 0)[Ik keek alleen maar naar mijn telefoon en wachtte tot jij zou 
-(live: 5s)[bellen.]]
-
-Ik lag op de bank en ik deed eigenlijk niets; ik las geen boek en ik keek geen TV. Was (text-style:&quot;blur&quot;)[de wereld] op dat moment vergaan, dan had ik het niet gemerkt.
-
-En ik?</tw-passagedata><tw-passagedata pid="8" name="8" tags="" position="500,300" size="100,100">(opacity: 0)|next&gt;[ [[i|Next-&gt;9]]]
-
-
-
-
-
-
-
-
-
-
-
-
+Ik lag op de bank en ik deed eigenlijk niets; ik las geen boek en ik keek geen TV. Was de wereld op dat moment vergaan, dan had ik het niet gemerkt.
 
 Ik keek alleen maar naar mijn telefoon en wachtte tot jij zou 
-(live: 3s)[bellen.]
+bellen.
 
-Ik lag op de bank en ik deed eigenlijk niets; ik las geen boek en ik keek geen TV. Was (opacity: 0)[de wereld] op dat moment vergaan, dan had ik het niet gemerkt.
 
-En ik?</tw-passagedata></tw-storydata>
+
+</tw-passagedata><tw-passagedata pid="7" name="7" tags="" position="500,100" size="100,100">(opacity: 0)|next&gt;[ [[i|Next-&gt;8]]]
+
+
+
+
+
+Het was de tweede keer in twee dagen dat de wereld verging. De eerste keer was toen jij de dag ervoor je ogen had neergeslagen en had gezegd: (text-style:&quot;italic&quot;)[Het ligt niet aan jou]. Het was de laatste leugen van ons samenzijn, of eigenlijk de eerste van ons niet-samenzijn, want je wilde geen samen meer. Wat ik had ervaren als het mooiste in mijn leven had op jou gedrukt als een last. Zonder mij. Je wilde zonder mij zijn.
+
+
+
+
+
+
+
+
+&lt;script&gt;
+document.body.addEventListener(&quot;mousemove&quot;, mirrorMouse);
+document.body.style.cursor = &#39;none&#39;;
+pointer.style.visibility = &#39;visible&#39;;
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="8" name="8" tags="" position="500,300" size="100,100">(opacity: 0)|next&gt;[ [[i|Next-&gt;9]]]
+
+
+
+
+
+Mijn hart was op mijn buikwand in stukken gevallen. Grote stukken van een diep, duizelingwekkend verdriet en verbijstering over hoe kalm je me die mededeling deed, zonder de minste aanwijzing dat dit het pijnlijkste was dat je me ooit had moeten zeggen, dat je liever duizend doden zou sterven dan dat je me dit had moeten zeggen. Je was de liefde van mijn leven en ik had er nooit rekening mee gehouden dat je me die kon afnemen. Ik probeerde te doen alsof ik het begreep, alsof ik je niet verweet dat je het niet meer wilde proberen, alsof al mijn frustraties en pijn niet opwogen tegen jouw frustraties en pijn. Ik hield zelfs teveel van je om boos op je te zijn.
+
+
+|next&gt;[[Volgende-&gt;9]] &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;|next&gt;[[Volgende-&gt;9]]
+
+&lt;script&gt;
+document.body.removeEventListener(&quot;mousemove&quot;, mirrorMouse);
+document.body.style.cursor = &#39;auto&#39;;
+pointer.style.visibility = &#39;hidden&#39;;
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="9" name="9" tags="" position="500,500" size="100,100">(opacity: 0)|next&gt;[ [[i|Next-&gt;10]]]
+
+
+
+
+
+We stonden in de gang en ik kon de woorden nauwelijks uitspreken. ‘Weet je het echt, heel, heel, heel zeker?’
+
+‘Nee. Ja.’
+
+‘Je zei nee.’
+
+‘Ja.’
+
+‘Maar kunnen we niet...’
+
+‘Nee.’
+
+‘Maar kunnen we niet...’
+
+‘Nee, Tobi. Het spijt me.’</tw-passagedata><tw-passagedata pid="10" name="10" tags="" position="700,100" size="100,100">(opacity: 0)|next&gt;[ [[i|Next-&gt;11]]]
+
+
+
+
+
+In de stilte hoorde ik mijn trillende adem. Jij frunnikte zenuwachtig aan je tas, zocht een manier om de voordeur te openen. Wat is een gang een vreselijke, vreselijke plek: een midden tussen blijven en gaan. Ik verzamelde al mijn moed en vroeg: ‘Zijn we nu niet meer...’</tw-passagedata><tw-passagedata pid="11" name="11" tags="" position="700,300" size="100,100">(opacity: 0)|next&gt;[ [[i|Next-&gt;12]]]
+
+
+
+
+
+Eindelijk keek je me aan, met tranen in je ogen, en schudde toen langzaam je hoofd. Ik vocht tegen mijn tranen, maar ze kwamen toch. Daardoor brak jij ook. We hielden elkaar vast, lang, stevig tegen elkaar aan, en dat vasthouden was het moeilijkste wat ik ooit heb gedaan. Toen liet je me los.</tw-passagedata><tw-passagedata pid="12" name="12" tags="" position="700,500" size="100,100">(opacity: 0)|next&gt;[ [[i|Next-&gt;13]]]
+
+
+
+
+
+Ik glimlachte door mijn tranen heen.
+
+Jij glimlachte door je tranen heen.
+
+‘Omnomnom?’ vroeg ik.
+
+‘Nomnomnom,’ zei je. En toen verdween je in het trappenhuis.</tw-passagedata><tw-passagedata pid="13" name="13" tags="" position="900,100" size="100,100">(opacity: 0)|next&gt;[ [[i|Next-&gt;14]]]
+
+
+
+
+
+Het eerste halfuur nam ik me voor me een waardevol en integer mens te tonen en niet bij de pakken neer te zitten. Ik dwong mijn tranen terug in mijn ogen en deed de afwas. Maar terwijl jouw lipafdrukken op het glaswerk oplosten in het sop, werd ik doorlopend geplaagd met visioenen over hoe andere mannen over jouw gezicht ejaculeerden en miljoenen potentiële kinderen die van ons hadden moeten zijn op jouw mondhoeken stierven, visioenen die mij het serviesgoed met zoveel doelloze wroeging te lijf deden gaan dat de glazen trillend dekking zochten onder de borden, en ik met het even angstaanjagende als aanlokkelijke idee begon te spelen om een glas tegen het aanrecht stuk te slaan en de scherven in mijn pols te zetten. Aan het eind van de middag zag ik dat je je Facebookstatus had veranderd in ‘vrijgezel’, iets waarmee je omgekeerd pas na wekenlang zeuren schoorvoetend had ingestemd, en smeet ik mijn laptop in het afgekoelde sop. En vroeg in de avond was de leegte die je had achtergelaten volledig over me neergedaald en was ik alleen, alleen in de volle omvang van mijn verdriet.</tw-passagedata><tw-passagedata pid="14" name="14" tags="" position="900,300" size="100,100">(opacity: 0)|next&gt;[ [[i|Next-&gt;15]]]
+
+
+
+
+
+Het was laat toen je sms’te. Ik lag op de bank, niet echt slapend en niet echt wakker. De scherven van mijn hart sprongen op in mijn buik.
+
+(text-style:&quot;italic&quot;)[Blub staat nog bij jou. Ik kom hem morgen halen.]
+
+En dat was het. Niet eens (text-style:&quot;italic&quot;)[Ben je morgen wel thuis?] of (text-style:&quot;italic&quot;)[Misschien kunnen we er nog over praten]. Geen (text-style:&quot;italic&quot;)[Zet je dan alvast een pot Minty Morocco], die je altijd zo lekker vond, en zelfs niet (text-style:&quot;italic&quot;)[Hoe gaat het nu met je?] Alleen: (text-style:&quot;italic&quot;)[Ik kom hem morgen halen]. Meer dan alles maakte dat het onomkeerbaar, definitief.
+
+O, Sophie, ik vind je zo ontzettend, ongelooflijk, onnavolgbaar lief. Waarom moest je dit doen?</tw-passagedata><tw-passagedata pid="15" name="15" tags="" position="900,500" size="100,100">
+
+
+
+
+
+
+(goto-url: &quot;https://tilburghumanities.eu.qualtrics.com/jfe/form/SV_e9Th0JqaxTiQMGW&quot;)[Go back to Qualtrics]
+</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,i=!1,a=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){i=!0,a=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw a}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
