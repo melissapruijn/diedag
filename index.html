@@ -30,7 +30,7 @@ tw-hook[name="top"] tw-link {
     position: fixed;
 	top: 15vh;
     left: 45%;
-    cursor: none;
+    cursor: url("https://i.ibb.co/QnSBND0/cursor.png") 8 8, auto;
 }
 tw-hook[name="bottom"] tw-link {
     background-color: transparent;
@@ -40,22 +40,17 @@ tw-hook[name="bottom"] tw-link {
     left: 45%;
     cursor: none;
 }
-tw-hook[name="left1"] tw-link {
+tw-hook[name="left"] tw-link {
     position: fixed;
 	bottom: 20vh;
     left: 30%;
-    z-index: 1;
-}
-tw-hook[name="left2"] tw-link {
-    position: fixed;
-	bottom: 20vh;
-    left: 30%;
-    z-index: 0;
+    cursor: url("https://i.ibb.co/QnSBND0/cursor.png") 8 8, auto;
 }
 tw-hook[name="right"] tw-link {
     position: fixed;
 	bottom: 20vh;
-    right: 30%;
+    right: 29%;
+    cursor: url("https://i.ibb.co/QnSBND0/cursor.png") 8 8, auto;
 }
 tw-hook[name="next"] tw-link {
     position: fixed;
@@ -71,39 +66,17 @@ tw-hook[name="next"] tw-link:hover {
 }
 tw-hook[name="shake"] tw-link {
     position: fixed;
-    cursor: none;
+    cursor: url("https://i.ibb.co/QnSBND0/cursor.png") 8 8, auto;
     bottom: 20vh;
 }
 tw-hook[name="float"] tw-link {
     position: absolute;
-    cursor: none;
+    cursor: url("https://i.ibb.co/QnSBND0/cursor.png") 8 8, auto;
 }
 tw-hook[name="einde"] tw-link {
     position: fixed;
 	bottom: 20vh;
     left: 41%;
-}
-tw-hook[name="bottom"]:hover ~ tw-hook[name="top"] tw-link,  tw-hook[name="top"] tw-link:hover {
-    background-color: white;
-	border-color: black;
-  	color: gray;
-    cursor: none;
-}
-tw-hook[name="left1"]:hover ~ tw-hook[name="right"] tw-link,  tw-hook[name="right"] tw-link:hover{
-	background-color: white;
-	border-color: black;
-  	color: gray;
-}
-tw-hook[name="right"]:hover ~ tw-hook[name="left2"] tw-link,  tw-hook[name="left2"] tw-link:hover{
-    background-color: white;
-	border-color: black;
-  	color: gray;
-    z-index: 1;
-}
-tw-hook[name="top"] tw-link:hover {
-    background-color: gray;
-	border-color: black;
-  	color: white;
 }
 tw-passage {
   text-align: center; 
@@ -292,10 +265,7 @@ We wisten niet waarom het gebeurde. Sommigen van ons vroegen zich af of het aan 
 [[[Volgende-&gt;3]]]&lt;top|
 
 
-&lt;script&gt;
-document.body.addEventListener(&quot;mousemove&quot;, mirrorMouseY);
-document.body.style.cursor = &#39;none&#39;;
-&lt;/script&gt;</tw-passagedata><tw-passagedata pid="3" name="3" tags="" position="101,501" size="100,100">
+</tw-passagedata><tw-passagedata pid="3" name="3" tags="" position="101,501" size="100,100">
 
 
 
@@ -308,15 +278,18 @@ Wetenschappers die het geluk hadden het voorval te overleven zeiden dat de zwaar
 
 
 
-[[[Volgende-&gt;4]]]&lt;next|
+
+
+
+
+
+[[[Volgende-&gt;4]]]&lt;float|
 
 
 &lt;script&gt;
-document.body.removeEventListener(&quot;mousemove&quot;, mirrorMouseY);
-document.body.addEventListener(&quot;mousemove&quot;, trackMouse);
 
-pointer.style.visibility = &#39;hidden&#39;;
-document.body.style.cursor = &#39;url(&quot;https://i.ibb.co/QnSBND0/cursor.png&quot;) 8 8, auto&#39;;
+var floatKnop = setInterval(floatButton, 1);
+
 &lt;/script&gt;</tw-passagedata><tw-passagedata pid="4" name="4" tags="" position="300,100" size="100,100">
 
 
@@ -329,13 +302,7 @@ Het gebeurde als een donderslag bij heldere hemel, om vijf over tien ’s ochten
 
 
 [[[Volgende-&gt;5]]]&lt;float|
-
-&lt;script&gt;
-var floatKnop = setInterval(floatButton, 1);
-var floatCursor = setInterval(floatMouse, 1);
-
-document.body.style.cursor = &#39;none&#39;;
-&lt;/script&gt;</tw-passagedata><tw-passagedata pid="5" name="5" tags="" position="301,298" size="100,100">
+</tw-passagedata><tw-passagedata pid="5" name="5" tags="" position="301,298" size="100,100">
 
 
 
@@ -350,10 +317,7 @@ Maar buiten was het altijd nog erger. Voor iemand ook maar besefte dat de hemel 
 
 
 &lt;script&gt;
-clearInterval(floatCursor);
 clearInterval(floatButton);
-document.body.style.cursor = &#39;url(&quot;https://i.ibb.co/QnSBND0/cursor.png&quot;) 8 8, auto&#39;;
-pointer.style.visibility = &#39;hidden&#39;;
 &lt;/script&gt;
 
 </tw-passagedata><tw-passagedata pid="6" name="6" tags="" position="300,498" size="100,100">
@@ -373,7 +337,8 @@ bellen.
 
 
 [[[Volgende-&gt;7]]]&lt;next|
-</tw-passagedata><tw-passagedata pid="7" name="7" tags="" position="500,99" size="100,100">
+
+</tw-passagedata><tw-passagedata pid="7" name="7" tags="" position="500,98" size="100,100">
 
 
 
@@ -386,14 +351,10 @@ Het was de tweede keer in twee dagen dat de wereld verging. De eerste keer was t
 
 
 
-[[[Volgende-&gt;8]]]&lt;left1|
+[[[Volgende-&gt;8]]]&lt;left|
 [[[Volgende-&gt;8]]]&lt;right|
-[[[Volgende-&gt;8]]]&lt;left2|
 
-&lt;script&gt;
-document.body.addEventListener(&quot;mousemove&quot;, mirrorMouseX);
-pointer.style.visibility = &#39;visible&#39;;
-&lt;/script&gt;</tw-passagedata><tw-passagedata pid="8" name="8" tags="" position="500,300" size="100,100">
+</tw-passagedata><tw-passagedata pid="8" name="8" tags="" position="500,300" size="100,100">
 
 
 
@@ -404,15 +365,11 @@ pointer.style.visibility = &#39;visible&#39;;
 Mijn hart was op mijn buikwand in stukken gevallen. Grote stukken van een diep, duizelingwekkend verdriet en verbijstering over hoe kalm je me die mededeling deed, zonder de minste aanwijzing dat dit het pijnlijkste was dat je me ooit had moeten zeggen, dat je liever duizend doden zou sterven dan dat je me dit had moeten zeggen. Je was de liefde van mijn leven en ik had er nooit rekening mee gehouden dat je me die kon afnemen. Ik probeerde te doen alsof ik het begreep, alsof ik je niet verweet dat je het niet meer wilde proberen, alsof al mijn frustraties en pijn niet opwogen tegen jouw frustraties en pijn. Ik hield zelfs teveel van je om boos op je te zijn.
 
 
+[[[Volgende-&gt;9]]]&lt;left|
+[[[Volgende-&gt;9]]]&lt;right|
 
 
-[[[Volgende-&gt;9]]]&lt;next|
-
-&lt;script&gt;
-document.body.removeEventListener(&quot;mousemove&quot;, mirrorMouseX);
-document.body.style.cursor = &#39;url(&quot;https://i.ibb.co/QnSBND0/cursor.png&quot;) 8 8, auto&#39;;
-pointer.style.visibility = &#39;hidden&#39;;
-&lt;/script&gt;</tw-passagedata><tw-passagedata pid="9" name="9" tags="" position="500,498" size="100,100">
+</tw-passagedata><tw-passagedata pid="9" name="9" tags="" position="500,498" size="100,100">
 
 
 
@@ -456,9 +413,6 @@ In de stilte hoorde ik mijn trillende adem. Jij frunnikte zenuwachtig aan je tas
 
 &lt;script&gt;
 var shakeButton = setInterval(shakeButton, 10);
-var shakeCursor = setInterval(shakeMouse, 10);
-document.body.style.cursor = &#39;none&#39;;
-pointer.style.visibility = &#39;visible&#39;;
 &lt;/script&gt;</tw-passagedata><tw-passagedata pid="11" name="11" tags="" position="700,300" size="100,100">
 
 
@@ -469,15 +423,15 @@ pointer.style.visibility = &#39;visible&#39;;
 
 Eindelijk keek je me aan, met tranen in je ogen, en schudde toen langzaam je hoofd. Ik vocht tegen mijn tranen, maar ze kwamen toch. Daardoor brak jij ook. We hielden elkaar vast, lang, stevig tegen elkaar aan, en dat vasthouden was het moeilijkste wat ik ooit heb gedaan. Toen liet je me los.
 
-[[[Volgende-&gt;12]]]&lt;next|
+
+[[[Volgende-&gt;12]]]&lt;shake|
+
 
 &lt;script&gt;
-clearInterval(shakeButton);
-document.body.removeEventListener(&quot;mousemove&quot;, trackMouse);
-clearInterval(shakeCursor);
-document.body.style.cursor = &#39;url(&quot;https://i.ibb.co/QnSBND0/cursor.png&quot;) 8 8, auto&#39;;
-pointer.style.visibility = &#39;hidden&#39;;
-&lt;/script&gt;</tw-passagedata><tw-passagedata pid="12" name="12" tags="" position="700,500" size="100,100">
+var shakeButton = setInterval(shakeButton, 10);
+&lt;/script&gt;
+
+</tw-passagedata><tw-passagedata pid="12" name="12" tags="" position="700,500" size="100,100">
 
 
 
@@ -497,11 +451,8 @@ Jij glimlachte door je tranen heen.
 
 &lt;script&gt;
 clearInterval(shakeButton);
-document.body.removeEventListener(&quot;mousemove&quot;, trackMouse);
-clearInterval(shakeCursor);
-document.body.style.cursor = &#39;url(&quot;https://i.ibb.co/QnSBND0/cursor.png&quot;) 8 8, auto&#39;;
-pointer.style.visibility = &#39;hidden&#39;;
-&lt;/script&gt;</tw-passagedata><tw-passagedata pid="13" name="13" tags="" position="900,100" size="100,100">
+&lt;/script&gt;
+</tw-passagedata><tw-passagedata pid="13" name="13" tags="" position="900,100" size="100,100">
 
 
 
